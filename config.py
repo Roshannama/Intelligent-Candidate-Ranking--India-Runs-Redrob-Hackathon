@@ -1,0 +1,21 @@
+from pathlib import Path
+ROOT = Path(__file__).resolve().parent
+DATA_DIR = ROOT / "data"
+ARTIFACT_DIR = ROOT / "artifacts"
+OUTPUT_DIR = ROOT / "outputs"
+CANDIDATES_FILE = DATA_DIR / "candidates.jsonl"
+JD_FILE = DATA_DIR / "jd.txt"
+CANDIDATES_PARQUET = ARTIFACT_DIR / "candidates.parquet"
+EMBEDDINGS_FILE = ARTIFACT_DIR / "candidate_embeddings.npy"
+FAISS_INDEX_FILE = ARTIFACT_DIR / "faiss.index"
+JD_EMBEDDING_FILE = ARTIFACT_DIR / "jd_embedding.npy"
+RANKING_FEATURES_FILE = ARTIFACT_DIR / "ranking_features.parquet"
+RANKER_FILE = ARTIFACT_DIR / "ranker.pkl"
+OUTPUT_FILE = OUTPUT_DIR / "submission.csv"
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+EMBEDDING_BATCH_SIZE = 64
+TOP_K_DENSE = 5000
+TOP_K_BM25 = 5000
+TOP_N = 100
+RANDOM_STATE = 42
+RANKING_DATE = "2026-06-01"

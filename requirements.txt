@@ -1,0 +1,13 @@
+numpy
+pandas
+pyarrow
+scikit-learn
+sentence-transformers
+transformers
+faiss-cpu
+lightgbm
+joblib
+rank-bm25
+tqdm
+rapidfuzz
+orjson
